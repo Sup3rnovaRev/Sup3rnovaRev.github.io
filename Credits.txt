@@ -1,0 +1,13 @@
+**Credits**
+
+*Translations*
+German Translation: Disso
+Spanish Translation: Soy R.A.
+
+*Libs/CSS*
+Skel Framework: https://github.com/ajlkn/skel
+Font Awesome: https://fontawesome.com/
+Fork Awesome: https://github.com/ForkAwesome/Fork-Awesome
+Flag Icons: https://github.com/lipis/flag-icon-css
+Drift: https://pixelarity.com/drift
+Jquery: https://jquery.com/

@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<title>Customisation Guide</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Learn how to customise IW4x to your own personal taste, everything from custom menus to custom camos."/>
+		<meta name="keywords" content="IW4x, iw4x custom menu, mw2 custom camos, iw4x custom camos, iw4x, custom music, mw2 custom reticle"/>
+		<meta name="theme-color" content="#317EFB"/>
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" href="iw4xIcon.ico">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+		<header id="header" class="alt skel-layers-fixed">
+			<nav id="nav">
+				<ul>
+					<li><a data-langkey="navbar-Home" href="index.html">Home</a></li>
+					<li><a data-langkey="navbar-Guides" href="guides.html">Guides</a></li>
+					<li><a data-langkey="navbar-Downloads" href="downloads.html">Downloads</a></li>
+					<li><a data-langkey="navbar-Support" href="supportCenter.html">Support</a></li>
+					<li><a data-langkey="navbar-Faq" href="faq.html">FAQ</a></li>
+					<li><a data-langkey="navbar-About" href="about.html">About</a></li>
+					<li>
+						<a href="" class="icon fa-angle-down"><span id="currentFlag" class="flag-icon flag-icon-gb"></span></a>
+						<ul>
+							<li><a href="" onclick="switchLanguage('gb')"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+							<li><a href="" onclick="switchLanguage('de')"><span class="flag-icon flag-icon-de"></span> German</a></li>
+							<li><a href="" onclick="switchLanguage('es')"><span class="flag-icon flag-icon-es"></span> Spanish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="bannerSkinny">
+			<div class="inner">
+				<h2>Customisation Guide</h2>
+				<a href="guides.html" class="button">Return to Guide list</a>
+			</div>
+		</section>
+
+		<!-- one -->
+		<section id="one" class="wrapper style1">
+			
+			<div class="container">
+
+				<h2><u>Introduction</u></h2>
+				<p>IW4x allows you to customize your game to your own personal liking, this can be anything from changing the main menu music to replacing camo textures and much much more. You do this by telling the game to load your new custom assets (gsc scripts, images, sounds, menu files,..) instead of the base game ones by using the userraw folder. I will now explain the basics to enable you to do so:</p>
+
+				<h2><u>IW4x Assets Location</u></h2>
+				<p>The game assets are contained in archives called .iwd files, these are zip files and can be opened by programs such as WinRar. The location of these files are in the "Main folder" and "iw4x" folder both located in the root MW2 folder. Example: iw_00.iwd, iw_01.iwd, ..., iw_23.iwd and so on. If you open any of these with a program such as WinRar or similar program you will see the games assets and folder structure they follow. The game pulls all the assets contained in each of these archives into one large pool of assets on launch. Imagine they extract all the iwd files content into one virtual folder and that's where the game pulls all it's assets from.</p>
+				
+				<h2><u>userraw Folder</u></h2>
+				<p>The userraw folder is used to override any asset contained within the main .iwd files, on launching the game, the game will use assets found in userraw over what is in the main iwd file. So any textures/sounds/scripts/... you place in userraw will be used over the ones found in main. The importance of this is that it avoids you editing the basegames .iwd files, any edits to these would work fine but as soon as an update comes out or you repair your game the updater.exe will delete any changes and restore it to it's original state. So userraw is the cleaner solution.</p>
+				
+				<p>Assets can either be placed as loose files/folders (replicating the folder structure inside of the iwd file they came from) in userraw or can be packed into .iwd files like how they are in the main folder. The choice is yours however it may be more clean to .iwd files but may be easier for beginners to use loose files.</p>
+				
+				<h3>LooseFile Example:</h3>
+				<span class="image fit"><img src="images/guideCustomise1.jpg" alt="Loose File" /></span>
+				<h3>IWD File Example:</h3>
+				<span class="image fit"><img src="images/guideCustomise2.jpg" alt="IWD Example" /></span>
+				
+				<h2><u>Using the userraw Folder</u></h2>
+				<p>Simply place the assets you wish overwrite the base game with, ensuring you replicated the folder structure in the iwd file. As an example I will explain the process of replacing the main menu music.</p>
+				
+				<ol>
+					<li>Locating the asset you wish to replace. This can be a trial and error process, as the assets are split across multiple .iwd files. In this case the main menu music file: "hz_t_oilrig_themestealth_v1.mp3" Is located in "iw_20.iwd" under "sound\music\hz_t_oilrig_themestealth_v1.mp3"</li>
+					<li>Now we know the file location we simply replicate the folder structure in userraw. Recreate the folders: "userraw\sound\music\hz_t_oilrig_themestealth_v1.mp3". You can replace the mp3 file with another just ensure the folder structure and name remains the same as the original.</li>
+				</ol>
+
+				<p>Loading up the game now will result in your custom mp3 file in userraw playing instead of the normal main menu music.</p>
+				
+				<h2><u>Downloading assets from online</u></h2>
+				<p>The same rules apply as above but this time you only need to place the downloaded files and extract them into userraw or if they come in an .iwd file simply place the .iwd inside of userraw "userraw\z_DownloadedFile.iwd"</p>
+				<p>Website to get skins from: <a href="http://gamebanana.com/skins/games/3291">GameBanana.com</a> Or see the user submitted files here: <a href="http://steamcommunity.com/groups/IW4X/discussions/0/1470841715978196458/">IW4x Steam Group</a></p>
+				
+				<h2><u>File Name Lookup</u></h2>
+				<ul>
+					<li>ACR Base Camo = images/weapon_magpul_masada_new_col.iwi</li>
+					<li>G18 Base Camo = images/weapon_glock_new_col.iwi</li>
+					<li>Scar-H Base Camo = images/weapon_scar_h_col.iwi</li>
+					<li>Red Dot Sight = images/weapon_red_dot_eotech_2_#0.iwi</li>
+					<li>Reflex Sight = weapon_red_dot_reflex_2.iwi</li>
+					<li>Main Menu Music = sound\music\hz_t_oilrig_themestealth_v1.mp3</li>
+					<li>Prestige Icons = images\cardicon_prestige_1.iwi (1-10)</li>
+				</ul>
+				<br>
+
+			</div>
+		</section>
+			
+		<!-- CTA -->
+		<section id="cta" class="wrapper style3">
+			<h2 data-langkey="discordHelp">Still not sure what you need?</h2>
+			<ul class="actions">
+				<li><a data-langkey="discordHelpLink" href="https://discordapp.com/invite/sKeVmR3" class="button big">Visit Our Discord</a></li>
+			</ul>
+		</section>
+
+		<!-- Return to Top -->
+		<a href="#bannerSkinny" id="return-to-top" class="scrolly"><i class="icon fa-chevron-up"></i></a>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://discordapp.com/invite/sKeVmR3" class="icon fa-discord"><span data-langkey="footer-DiscordLink"class="label">IW4x Discord</span></a></li>
+				<li><a href="https://www.youtube.com/channel/UCGF7Wpkhgn-jErmW-rHRd1g" class="icon fa-youtube"><span data-langkey="footer-YoutubeLink" class="label">IW4x Youtube</span></a></li>
+				<li><a href="https://github.com/IW4x" class="icon fa-github"><span data-langkey="footer-GithubLink" class="label">IW4x GitHub</span></a></li>
+			</ul>
+			<ul class="menu">
+				<li><a data-langkey="footer-TorLink" href="https://iw4xcachep26muba.onion.ly/">IW4x Tor Mirror</a></li>
+				<li><a data-langkey="footer-WikiLink" href="https://github.com/Jawesome99/IW4x/wiki">IW4x Wiki</a></li>
+			</ul>
+			<span data-langkey="footer-Copyright" class="copyright">
+				Trademarks used are owned by their respective owners. This mod is not endorsed or affiliated with the copyright holders of the base game in any form.</a>	
+			</span>
+			
+		</footer>
+
+	</body>
+</html>

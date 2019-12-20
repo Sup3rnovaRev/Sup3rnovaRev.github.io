@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<title>Public Server Guide</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="LAN Server Guide, all the information you need to get a local LAN server up and running"/>
+		<meta name="keywords" content="IW4x, IW4x LAN Party Guide, LAN Dedicated Server Guide, Local, iw4x lan dedi server setup, iw4x server guide"/>
+		<meta name="theme-color" content="#317EFB"/>
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" href="iw4xIcon.ico">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+		<header id="header" class="alt skel-layers-fixed">
+			<nav id="nav">
+				<ul>
+					<li><a data-langkey="navbar-Home" href="index.html">Home</a></li>
+					<li><a data-langkey="navbar-Guides" href="guides.html">Guides</a></li>
+					<li><a data-langkey="navbar-Downloads" href="downloads.html">Downloads</a></li>
+					<li><a data-langkey="navbar-Support" href="supportCenter.html">Support</a></li>
+					<li><a data-langkey="navbar-Faq" href="faq.html">FAQ</a></li>
+					<li><a data-langkey="navbar-About" href="about.html">About</a></li>
+					<li>
+						<a href="" class="icon fa-angle-down"><span id="currentFlag" class="flag-icon flag-icon-gb"></span></a>
+						<ul>
+							<li><a href="" onclick="switchLanguage('gb')"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+							<li><a href="" onclick="switchLanguage('de')"><span class="flag-icon flag-icon-de"></span> German</a></li>
+							<li><a href="" onclick="switchLanguage('es')"><span class="flag-icon flag-icon-es"></span> Spanish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="bannerSkinny">
+			<div class="inner">
+				<h2>Offline LAN Server Guide</h2>
+				<a href="guides.html" class="button">Return to Guide list</a>
+			</div>
+		</section>
+
+		<!-- one -->
+			<section id="one" class="wrapper style1">
+				
+				<div class="container">
+					<h3><u>Introduction</u></h3>
+					<p>This guide will cover the setup of a dedicated server for IW4x for use on a Local Area Network (LAN), please note this is for <b>advanced users only</b>. If you are looking for a simply way to play with friends I recommend you check out the <a href="privateMatchGuide.html"> Private Match Guide</a>.</p>
+
+					<p>There are two main types of servers. There are party servers or match servers, party server act like a traditional steam MW2 lobby, leaving you time to vote for the next map and edit your classes. The other type of server is match, this is the most commonly used type of server and simply rotates map to map without any lobby.</p>
+					<div class="row">
+						<div class="6u 12u(2)">
+							<h4>Party Server</h4>
+							<ul>
+								<li>Steam style lobby system.</li>
+								<li>Adjust classes and killstreak rewards without leaving the server.</li>
+								<li>Vote to skip next map.</li>
+								<li><b>Note:</b> Party servers are very buggy and unstable, they will crash often and even with scripts the server might not properly restart. It is advised to not use party servers and stick to match servers instead!</li>
+							</ul>
+						</div>
+						<div class="6u 12u(2)">				
+							<h4>Match Server</h4>
+							<ul>
+								<li>A normal dedicated server that makes use of a map rotation.</li>
+								<li>Rotates map to map with no lobby.</li>
+								<li>Stable and the recommended server type to use.</li>
+							</ul>
+						</div>
+					</div>
+
+					<h3><u>Requirements</u></h3>
+					<ul>
+						<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">The Visual C++ Redistributable Package</a></li>
+						<li><a href="https://code.visualstudio.com/">Visual Code</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a> or <a href="https://www.sublimetext.com/">Sublime Text</a> - (You may use whatever editor you choose but we don't recommend windows notepad)</li>
+						<li><a href="https://dss0.cc/alterwarez/download/iw4x_dedicated_server_full.torrent" >IW4x All-In-One (Dedicated Server Edition)</a> - (Streamlined version of MW2 with textures removed for reduced file size)</li>
+						<li>Some technical knowledge / background knowledge of computers</li>
+					</ul>
+
+					<h3><u>Match Server Setup</u></h3>
+					<ul>
+						<li>Download the <a href="https://dss0.cc/alterwarez/download/iw4x_dedicated_server_full.torrent" >IW4x All-In-One (Dedicated Server Edition)</a> and place it in a location of your choosing on your VPS or PC</li>
+						<li>Download the <a href="https://reactiongaming.us/community/attachments/server-cfg.214/">server.cfg</a> and place it in your 'userraw' folder. (Create if you don't have one)</li>
+						<li>Download the <a href="https://reactiongaming.us/community/index.php?attachments/dedicatedserver-bat.208/">DedicatedServer.bat</a> drop it on your main root of your game folder.</li>
+						<li>Right click the DedicatedServer.bat file and go to edit with notepad++</li>
+						<li>Carefully review/edit the bat file. Game Port LAN Mode.</li>
+						<li>Save the file that you just edit.</li>
+						<li>Go to your userraw folder. Right click on server.cfg and edit with notepad++</li>
+						<li>Carefully review edit the cfg file to your liking.<br>Give it a hostname, Message of the day, Gametype, remove/add maps that you want on the rotate.</li>
+						<li>Ensure you set <b>LANMode=1</b>, this is important for Offline servers.</li>
+						<li>Save the server.cfg file that you just edit after you done.  You can always go back and edit it</li>
+						<li>Forward the TCP and UDP port you put in the bat file.</li>
+						<li>Run the startserver.bat and have fun! (ignore any missing console errors)</li>
+						<li>Client PC's Go to Join Game and on the server browser set the Source option to LAN and the server should be listed.</li>
+					</ul>
+
+					<h3><u>Party Server Setup</u></h3>
+					<ul>
+						<li>Download the <a href="https://dss0.cc/alterwarez/download/iw4x_dedicated_server_full.torrent" >IW4x All-In-One (Dedicated Server Edition)</a> and place it in a location of your choosing on your VPS or PC</li>
+						<li>Download the <a href="https://reactiongaming.us/community/attachments/partyserver-cfg.215/">partyserver.cfg</a> and <a href="https://reactiongaming.us/community/attachments/myplaylists-info.216/">myplaylist.info</a> place them both in your 'userraw' folder (Create if you don't have one)</li>
+						<li>Download the <a href="https://reactiongaming.us/community/index.php?attachments/dedicatedlobbyserver-bat.198/">DedicatedLobbyServer.bat</a> drop it on your main root of your game folder.</li>
+						<li>Right click the DedicatedLobbyServer.bat file and go to edit with Visual Studio Code or your choice of editor.</li>
+						<li>Carefully review/edit the file to your liking, Gamemode, GamePort</li>
+						<li>Ensure you set <b>LANMode=1</b>, this is important for Offline servers.</li>
+						<li>Make sure <b>party_minplayers=2</b> on whatever playlist you chose. (Don't do "1" on teambased games or you going to have problems)</li>
+						<li>Save the file that you just edit after you done. You can always go back and edit it.</li>
+						<li>Go to your userraw folder. Right click on partyserver.cfg and edit with Visual Studio Code or your choice of editor.</li>
+						<li>Carefully review edit the cfg file to your liking. Give it a hostname, Message of The Day, etc.</li>
+						<li>Save the partyserver.cfg file that you just edit.</li>
+						<li>Make sure All PC's are set to Home/Private Network and iw4x.exe is allowed in windows firewall or 3rd party firewalls.</li>
+						<li>Run the DedicatedLobbyServer.bat and the window should open the name of your server, 0/18 players, none. Ignore any console errors that happen. As long as the server doesn't crash or error out.</li>
+						<li>Client PC's Go to Join Game and on the server browser set the Source option to LAN and the server should be listed.</li>
+					</ul>
+
+					<h3><u>Want To Learn More?</u></h3>
+					<p>Check out the official <a href="https://github.com/Jawesome99/IW4x/wiki">IW4x Wiki</a>, it contains more detailed information in regards to servers such as the API or even setting up a server using a Docker container.</p>
+
+					<h3><u>Credits</u></h3>
+					<ul>
+						<li>LinusMeMeTips#7622 for the base of the guide.</li>
+						<li>IW4x team for the Wiki writeup.</li>
+					</ul>
+					<br>
+
+				</div>
+			</section>
+			
+		<!-- CTA -->
+		<section id="cta" class="wrapper style3">
+			<h2 data-langkey="discordHelp">Still not sure what you need?</h2>
+			<ul class="actions">
+				<li><a data-langkey="discordHelpLink" href="https://discordapp.com/invite/sKeVmR3" class="button big">Visit Our Discord</a></li>
+			</ul>
+		</section>
+
+		<!-- Return to Top -->
+		<a href="#bannerSkinny" id="return-to-top" class="scrolly"><i class="icon fa-chevron-up"></i></a>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://discordapp.com/invite/sKeVmR3" class="icon fa-discord"><span data-langkey="footer-DiscordLink"class="label">IW4x Discord</span></a></li>
+				<li><a href="https://www.youtube.com/channel/UCGF7Wpkhgn-jErmW-rHRd1g" class="icon fa-youtube"><span data-langkey="footer-YoutubeLink" class="label">IW4x Youtube</span></a></li>
+				<li><a href="https://github.com/IW4x" class="icon fa-github"><span data-langkey="footer-GithubLink" class="label">IW4x GitHub</span></a></li>
+			</ul>
+			<ul class="menu">
+				<li><a data-langkey="footer-TorLink" href="https://iw4xcachep26muba.onion.ly/">IW4x Tor Mirror</a></li>
+				<li><a data-langkey="footer-WikiLink" href="https://github.com/Jawesome99/IW4x/wiki">IW4x Wiki</a></li>
+			</ul>
+			<span data-langkey="footer-Copyright" class="copyright">
+				Trademarks used are owned by their respective owners. This mod is not endorsed or affiliated with the copyright holders of the base game in any form.</a>	
+			</span>
+			
+		</footer>
+
+	</body>
+</html>

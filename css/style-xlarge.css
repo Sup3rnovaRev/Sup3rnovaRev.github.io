@@ -1,0 +1,25 @@
+/*
+	Drift by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+span.shorty {
+	overflow-wrap: break-word;
+}
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 12em 0;
+	}
+
+	#bannerSkinny {
+		padding: 4em 0;
+	}

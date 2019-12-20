@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<title>Public Server Guide</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Dedicated Server Guide, all the information you need to get a public server up and running"/>
+		<meta name="keywords" content="IW4x, IW4x dedicated server, iw4x dedi server setup, iw4x server guide, IW4MAdmin, Server Administration"/>
+		<meta name="theme-color" content="#317EFB"/>
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" href="iw4xIcon.ico">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+		<header id="header" class="alt skel-layers-fixed">
+			<nav id="nav">
+				<ul>
+					<li><a data-langkey="navbar-Home" href="index.html">Home</a></li>
+					<li><a data-langkey="navbar-Guides" href="guides.html">Guides</a></li>
+					<li><a data-langkey="navbar-Downloads" href="downloads.html">Downloads</a></li>
+					<li><a data-langkey="navbar-Support" href="supportCenter.html">Support</a></li>
+					<li><a data-langkey="navbar-Faq" href="faq.html">FAQ</a></li>
+					<li><a data-langkey="navbar-About" href="about.html">About</a></li>
+					<li>
+						<a href="" class="icon fa-angle-down"><span id="currentFlag" class="flag-icon flag-icon-gb"></span></a>
+						<ul>
+							<li><a href="" onclick="switchLanguage('gb')"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+							<li><a href="" onclick="switchLanguage('de')"><span class="flag-icon flag-icon-de"></span> German</a></li>
+							<li><a href="" onclick="switchLanguage('es')"><span class="flag-icon flag-icon-es"></span> Spanish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="bannerSkinny">
+			<div class="inner">
+				<h2>Public Server Guide</h2>
+				<a href="guides.html" class="button">Return to Guide list</a>
+			</div>
+		</section>
+
+		<!-- one -->
+		<section id="one" class="wrapper style1">
+			
+			<div class="container">
+				<h3><u>Introduction</u></h3>
+				<p>This guide will cover the setup of a dedicated server for IW4x for use at your home or more likely a VPS, please note this is for <b>advanced users only</b>. If you are looking for a simply way to play with friends I recommend you check out the <a href="privateMatchGuide.html"> Private Match Guide</a>.</p>
+
+				<p>There are two main types of servers. There are party servers or match servers, party server act like a traditional steam MW2 lobby, leaving you time to vote for the next map and edit your classes. The other type of server is match, this is the most commonly used type of server and simply rotates map to map without any lobby.</p>
+				<div class="row">
+					<div class="6u 12u(2)">
+						<h4>Party Server</h4>
+						<ul>
+							<li>Steam style lobby system.</li>
+							<li>Adjust classes and killstreak rewards without leaving the server.</li>
+							<li>Vote to skip next map.</li>
+							<li><b>Note:</b> Party servers are very buggy and unstable, they will crash often and even with scripts the server might not properly restart. It is advised to not use party servers and stick to match servers instead!</li>
+						</ul>
+					</div>
+					<div class="6u 12u(2)">				
+						<h4>Match Server</h4>
+						<ul>
+							<li>A normal dedicated server that makes use of a map rotation.</li>
+							<li>Rotates map to map with no lobby.</li>
+							<li>Stable and the recommended server type to use.</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3><u>Requirements</u></h3>
+				<ul>
+					<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">The Visual C++ Redistributable Package</a></li>
+					<li><a href="https://code.visualstudio.com/">Visual Code</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a> or <a href="https://www.sublimetext.com/">Sublime Text</a> - (You may use whatever editor you choose but we don't recommend windows notepad)</li>
+					<li><b>IW4x All-In-One (Dedicated Server Edition)</b> - (Streamlined version of MW2 with textures removed for reduced file size)<br> <a href="https://dss0.cc/alterwarez/download/iw4x_dedicated_server_full.torrent" >[Torrent Download]</a> or <a href="https://dss0.cc/alterwarez/download/iw4x_dedicated_server_full.torrent" >[Direct Download]</a></li>
+					<li>Computer or VPS that's online 24/7 with a decent connection that has average or above specs (We strongly advise a VPS)</li>
+					<li><a href="https://raidmax.org/iw4madmin/">IW4MAdmin</a> by RaidMax (Optional but strongly advised administration system)</li>
+					<li>Some technical knowledge / background knowledge of computers</li>
+				</ul>
+
+				<h3><u>Match Server Setup</u></h3>
+				<ul>
+					<li>Download the IW4x All-In-One Dedicated Server Edition (See Requirements Section) and place it in a location of your choosing on your VPS or PC</li>
+					<li>Right click the DedicatedServer.bat file and go to edit with notepad++</li>
+					<li>Carefully review/edit the bat file. Game Port LAN Mode.</li>
+					<li>Save the file that you just edit.</li>
+					<li>Go to your userraw folder. Right click on server.cfg and edit with notepad++</li>
+					<li>Carefully review edit the cfg file to your liking.<br>Give it a hostname, Message of the day, Gametype, remove/add maps that you want on the rotate.</li>
+					<li>Save the server.cfg file that you just edit after you done.  You can always go back and edit it</li>
+					<li>Forward the TCP and UDP port you put in the bat file.</li>
+					<li>Run the startserver.bat and now the server should be listed in the serverlist</li>
+				</ul>
+
+				<h3><u>Party Server Setup</u></h3>
+				<ul>
+					<li>Download the IW4x All-In-One Dedicated Server Edition (See Requirements Section) and place it in a location of your choosing on your VPS or PC</li>
+					<li>Right click the DedicatedLobbyServer.bat file and go to edit with Visual Studio Code or your choice of editor.</li>
+					<li>Carefully review/edit the file to your liking, Gamemode, GamePort, LAN Mode.</li>
+					<li>Save the file that you just edit after you done. You can always go back and edit it.</li>
+					<li>Go to your userraw folder. Right click on partyserver.cfg and edit with Visual Studio Code or your choice of editor.</li>
+					<li>Carefully review edit the cfg file to your liking. Give it a hostname, Message of The Day, etc.</li>
+					<li>Save the partyserver.cfg file that you just edit.</li>
+					<li>On your router, Forward the TCP and UDP port you put in +set net_port "28960" or whatever of your choice. We can't help on this as everyone's routers very different.</li>
+					<li>Run the DedicatedLobbyServer.bat and the window should open the name of your server, 0/18 players, none. Ignore any console errors that happen. As long as the server doesn't crash or error out.</li>
+					<li>The server should now be listed in the serverlist</li>
+				</ul>
+
+				<h4><u>Troubleshooting</u></h4>
+				<p>If you find after setting up your server that you cannot see it on the server list please look over the following:</p>
+				<ul>
+					<li>If you are hosting the server at Home the usual issue is forgetting to port forward or port forwarding incorrectly. Ensure whatever port you are running your server on (Default=28961) is forwarded on both protocols (UDP & TCP).
+						It is also worth checking to ensure you have port forwarded to the correct internal IP. You can confirm this using CMD with the command <b>ipconfig /all</b> and looking at the address listed next to IPv4. It is also 
+						strongly advised to use a static IP to prevent your internal IP changing (Saves you having to constantly update port forwarding rules).</li>
+					<li>Again if you are hosting at home another issue can be NAT loopback, this prevents you yourself from seeing the server on the list, but anyone else will see it. (It is best to ask a friend to confirm the server is listed / not listed).</li>
+					<li>Another portenical issue with home hosting is that your ISP may not support port forwarding, if this is the case we strongly advise to switch to using a VPS as initially suggested.</li>
+					<li>Ensure your server console has a map loaded, you can see this from the title bar of the CMD window. If no map is loaded there's a good chance your config is incorrect.</li>
+				</ul>
+
+				<h3><u>Instructions on how to host another server without conflict</u></h3>
+				<h4>Clone Regular Server</h4>
+				<ul>
+					<li>Go to your userraw folder.</li>
+					<li>Right click and copy server.cfg</li>
+					<li>Right-click on a blank space inside the userraw folder window and paste.</li>
+					<li>Right click on the server - Copy.cfg file rename it to server2.cfg</li>
+					<li>Right click on server2.cfg and edit with notepad++</li>
+					<li>Carefully edit/review the cfg again. Make sure to change the hostname a little different Also the g_log.</li>
+					<li>File and save the new server2.cfg file</li>
+					<li>Go back to the main root of your game.</li>
+					<li>Copy and Paste DedicatedServer.bat same way you did with cfg file.</li>
+					<li>Right click on the DedicatedServer - copy.bat and rename it to DedicatedServer2.bat</li>
+					<li>Right click and edit with notepad++</li>
+					<li>Change the gameport to a different number. Try 28961</li>
+					<li>Go down to where it says set ServerFilename=server.cfg. Rename it to server.cfg to server2.cfg</li>
+					<li>Save the DedicatedServer2.bat file</li>
+					<li>Make sure to again port forward the new port (28961) with UDP &amp; TCP</li>
+					<li>Now run your second iw4x dedicated server. You should now have 2 servers up and running without issues.</li>
+				</ul>
+				<h4>Clone Lobby Server</h4>
+				<ul>
+				<li>Go to your userraw folder.</li>
+				<li>Right click and copy partyserver.cfg</li>
+				<li>Right-click on a blank space inside the userraw folder window and paste.</li>
+				<li>Right click on the partyserver - Copy.cfg file rename it to partyserver2.cfg</li>
+				<li>Right click on partyserver2.cfg and edit with notepad++</li>
+				<li>Carefully edit/review the cfg again. Make sure to change the hostname a little different Also the g_log.</li>
+				<li>File and save the new partyserver2.cfg file</li>
+				<li>Go back to the main root of your game.</li>
+				<li>Copy and Paste LobbyDedicatedServer.bat same way you did with cfg file.</li>
+				<li>Right click on the LobbyDedicatedServer - copy.bat and rename it to LobbyDedicatedServer2.bat</li>
+				<li>Right click and edit with notepad++</li>
+				<li>Change the gameport to a different number. Try 28961</li>
+				<li>Go down to where it says set ServerFilename=partyserver.cfg. Rename it to partyserver.cfg to partyserver2.cfg</li>
+				<li>Save the LobbyDedicatedServer2.bat file</li>
+				<li>Make sure to again port forward the new port (28961) with UDP &amp; TCP</li>
+				<li>Now run your second iw4x dedicated server. You should now have 2 servers up and running without issues.</li>
+				</ul>
+
+				<h3><u>Password protecting a server</u></h3>
+				<p>Before attempting this you must first ask yourself why you want a publically listed server to have a password. If it's simply to keep it private it would be a much better idea to set <b>sv_lanonly</b> to 1. Doing this will not broadcast your server to the server list,
+					keeping it private with the benefit of not confusing new users who often ask for server passwords... <br><b>Note:</b> If you launched your server already without sv_lanonly it will have been broadcasted to the server list node system, so even you set sv_lanonly the server 
+					will still be public. If this is the case, then use a password as a last resort or as a workaround change the port of your server (It is treated as a different server as far as the node system is concerned).</p>
+				<h4>Permanent Password</h4>
+				<ul>
+				<li>Go to your userraw folder.</li>
+				<li>Right click on server.cfg or partyserver.cfg (depending on which mode server you on) and edit with notepad++.</li>
+				<li>Go down to where it says g_password ""</li>
+				<li>Type in a password you wanted</li>
+				</ul>
+				<h4>Temporary Password</h4>
+				<ul>
+					<li>Start your server if you don't have it running</li>
+					<li>on the console window type in g_password "123456" (123456 to whatever you want)</li>
+					<li>It should work instantly but if not just type in map_restart.</li>
+					<li>to open your match with no password without restarting, type in g_password "" with double quotes to disable.</li>
+				</ul>
+
+				<h3><u>Server Administration Software</u></h3>
+				<p>There are two main pieces of software available for server administration, that being IW4MAdmin and the other being B3. B3 is no longer actively supported, so IW4MAdmin is the recommended choice.</p>
+				<p>IW4MAdmin is an administration tool for IW4x, T6M, and most Call of Duty® dedicated servers. It allows complete control of your server; from changing maps, to banning players, IW4MAdmin monitors and records activity on your server(s). With plugin support, extending its functionality is a breeze.</p>
+				<ul>
+					<li><a href="https://github.com/RaidMax/IW4M-Admin/blob/2.2/README.md">IW4MAdmin - Documentation</a></li>
+					<li><a href="https://raidmax.org/IW4MAdmin/">IW4MAdmin - Download</a></li>
+					<li><a href="https://github.com/RaidMax/IW4M-Admin/">IW4MAdmin - Source</a></li>
+					<li><a href="https://discord.gg/ZZFK5p3">IW4MAdmin - Discord</a></li>
+				</ul>
+
+				<h3><u>Fast Download Support (FastDL)</u></h3>
+				
+				<h4><u>Server Configuration</u></h4>
+				<ol>
+					<li>Open your server.cfg file and add these two dvars</li>
+				</ol>
+				<p><b>set sv_wwwBaseURL "http://domain.com/iw4x/"</b> or <b>"http://0.0.0.0/iw4x/"</b> // If using an IP and not a domain, put the IP of your server<br><b>set sv_wwwDownload "1"</b><br><b>(Replace 0.0.0.0 with your public server IP)</b></p>
+				<ol start="2">
+					<li>Access your webservice via FileZilla or any other client<br>If you do not have a website/domain and want to host these locally, follow the instructions for the Windows Webservice or Linux Webservice.<br></li>
+					<li>Create a "iw4x" directory in the root folder of your hosted website/domain</li>
+					<li>Copy your "mods" folder from your IW4x installation into this directory</li>
+					<li>Make sure the name of the mod you want to use on your server is named correctly</li>
+					<li>Open a web browser of your choice and go to "<a href="http://domain.com/iw4x/">http://domain.com/iw4x/</a>" or "<a href="http://0.0.0.0/iw4x/">http://0.0.0.0/iw4x/</a>" <b>(Replace 0.0.0.0 with your public server IP)</b></li>
+				</ol>
+				<p><b>Note:</b> If set up correctly you will see a mods folder and it will contain your mod files<br>The final path should look something like this: "<a href="http://0.0.0.0/iw4x/mods/modname/z_mod.iwd">http://0.0.0.0/iw4x/mods/modname/z_mod.iwd</a><br><b>(Replace 0.0.0.0 with your public server IP)</b></p>
+				
+				<h4><u>Windows Webservice</u></h4>
+				<p>If you want to host the files on the same server you host your IW4x game you can follow these steps. You can also alternatively use IIS, we will be providing a tutorial for this shortly.</p>
+				<ol>
+					<li>Download XAMPP on your windows server</li>
+					<li>Install XAMPP</li>
+					<li>Open windows advanced firewall</li>
+					<li>Click inbound rules</li>
+					<li>Click add rule</li>
+					<li>Add a new rule by PORT and specify TCP and port 80</li>
+					<li>Open XAMPP</li>
+					<li>Start the Apache service</li>
+					<li>Open your browser and go to the ip address of your windows server If done correctly you will see an XAMPP welcome page</li>
+					<li>On the windows server go to C:/xampp/htdocs</li>
+				</ol>
+				<p>Continue from step 3 in the Server Configuration steps</p>
+				
+				<h4><u>Linux Webservice</u></h4>
+				<p>If you want to host the files on the same server you host your IW4x game you can follow these steps</p>
+				<ol>
+					<li>Install web server of your choice (Nginx, Apache, etc)</li>
+					<li>For nginx run the command:</li>
+				</ol>
+					<p><b>sudo apt install nginx</b></p>
+				<ol start="3">
+					<li>After nginx is installed run the command:</li>
+				</ol>
+					<p><b>sudo service nginx start</b></p>
+				<ol start="4">
+					<li>Go to /var/www/html/</li>
+				</ol>
+				<p>Continue from step 3 in the Server Configuration steps</p>
+
+				<h4><u>Info</u></h4>
+				<ul>
+					<li>The files you put on the http downloads MUST be the same files that your server is using</li>
+					<li>If you get an error saying "Unable to download mod.iwd" when you try to join the server, the files are not in the correct place</li>
+				</ul>
+
+				<h3><u>General Information</u></h3>
+				<h4>Map Code Names:</h4>
+				<pre>
+					<code>
+<u>BASE GAME:</u>
+<b>map mp_afghan</b>					(Afgan)
+<b>map mp_boneyard</b>					(Scrapyard)
+<b>map mp_brecourt</b>					(Wasteland)
+<b>map mp_checkpoint</b>				(Karachi)
+<b>map mp_derail</b>					(Derail)
+<b>map mp_estate</b>					(Estate)
+<b>map mp_favela</b>					(Favela)
+<b>map mp_highrise</b>					(Highrise)
+<b>map mp_nightshift</b>				(Skidrow)
+<b>map mp_invasion</b>					(Invasion)
+<b>map mp_quarry</b>					(Quary)
+<b>map mp_rundown</b>					(Rundown)
+<b>map mp_rust</b>					(Rust)
+<b>map mp_subbase</b>					(Subbase)
+<b>map mp_terminal</b>					(Terminal)
+<b>map mp_underpass</b>				(Underpass)
+
+<u>DLC1 STIMULUS:</u>
+<b>map mp_complex</b>					(Bailout)
+<b>map mp_crash</b>					(Crash)
+<b>map mp_overgrown</b>				(Overgrown)
+<b>map mp_compact</b>					(Salvage)
+<b>map mp_storm</b>					(Storm)
+
+<u>DLC2 RESURGENCE:</u>
+<b>map mp_abandon</b>					(Carnival)
+<b>map mp_fuel2</b>					(Fuel)
+<b>map mp_strike</b>					(Strike)
+<b>map mp_trailerpark</b>				(Trailer Park)
+<b>map mp_vacant</b>					(Vacant)
+
+<u>DLC3 NUKETOWN:</u>
+<b>map mp_nuked</b>					(Nuketown)
+
+<u>DLC4 CLASSICS 1:</u>
+<b>map mp_cross_fire</b>				(Crossfire)
+<b>map mp_bloc</b>					(Bloc)
+<b>map mp_cargoship</b>				(Cargoship)
+
+<u>DLC5 CLASSICS 2:</u>
+<b>map mp_killhouse</b>				(Killhouse)
+<b>map mp_bog_sh</b>					(Bog)
+
+<u>DLC6 FREIGHTER:</u>
+<b>map mp_cargoship_sh</b>				(Freighter)
+
+<u>DLC7 RESURRECTION:</u>
+<b>map mp_shipment_long</b>				(Shipment:Long)
+<b>map mp_rust_long</b>				(Rust:Long)
+<b>map mp_firingrange</b>				(Firing Range)
+
+<u>DLC8 RECYCLED:</u>
+<b>map mp_storm_spring</b>				(Chemical Plant)
+<b>map mp_fav_tropical</b>				(Tropical: Favela)
+<b>map mp_estate_tropical</b>				(Tropical: Estate)
+<b>map mp_crash_tropical</b>				(Tropical: Crash)
+<b>map mp_bloc_sh</b>					(Forgotten City)
+
+<u>SP MAPS to MP:</u>
+<b>map oilrig</b>					(Oilrig)
+<b>map iw4_credits</b>					(IW4_Credits)
+<b>map co_hunted</b>					(Village)
+
+					</code>
+				</pre>
+
+				<h4>Gamemodes Code Names:</h4>
+				<pre>
+					<code>
+<b>war</b>						(Team Deathmatch)
+<b>dm</b>						(Free-For-All)
+<b>dom</b>						(Domination)
+<b>koth</b>						(Headquarters)
+<b>sab</b>						(Sabotage)
+<b>sd</b>						(Search and Destroy)
+<b>ctf</b>						(Capture the Flag)
+<b>dd</b>						(Demolition)
+<b>oneflag</b>						(One-Flag Capture the Flag)
+<b>gtnw</b>						(Global Thermonuclear War - Cut Content)
+<b>arena</b>						(Arena - Cut Content)
+						</code>
+				</pre>
+
+				<h3><u>Want To Learn More?</u></h3>
+				<p>Check out the official <a href="https://github.com/Jawesome99/IW4x/wiki">IW4x Wiki</a>, it contains more detailed information in regards to servers such as the API or even setting up a server using a Docker container.</p>
+
+				<h3><u>Credits</u></h3>
+				<ul>
+					<li>Matrix#7801 for the FastDownload section.</li>
+					<li>LinusMeMeTips#7622 for the base of the guide.</li>
+					<li>IW4x team for the Wiki writeup.</li>
+				</ul>
+				<br>
+				
+			</div>
+		</section>
+			
+		<!-- CTA -->
+		<section id="cta" class="wrapper style3">
+			<h2 data-langkey="discordHelp">Still not sure what you need?</h2>
+			<ul class="actions">
+				<li><a data-langkey="discordHelpLink" href="https://discordapp.com/invite/sKeVmR3" class="button big">Visit Our Discord</a></li>
+			</ul>
+		</section>
+
+		<!-- Return to Top -->
+		<a href="#bannerSkinny" id="return-to-top" class="scrolly"><i class="icon fa-chevron-up"></i></a>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://discordapp.com/invite/sKeVmR3" class="icon fa-discord"><span data-langkey="footer-DiscordLink"class="label">IW4x Discord</span></a></li>
+				<li><a href="https://www.youtube.com/channel/UCGF7Wpkhgn-jErmW-rHRd1g" class="icon fa-youtube"><span data-langkey="footer-YoutubeLink" class="label">IW4x Youtube</span></a></li>
+				<li><a href="https://github.com/IW4x" class="icon fa-github"><span data-langkey="footer-GithubLink" class="label">IW4x GitHub</span></a></li>
+			</ul>
+			<ul class="menu">
+				<li><a data-langkey="footer-TorLink" href="https://iw4xcachep26muba.onion.ly/">IW4x Tor Mirror</a></li>
+				<li><a data-langkey="footer-WikiLink" href="https://github.com/Jawesome99/IW4x/wiki">IW4x Wiki</a></li>
+			</ul>
+			<span data-langkey="footer-Copyright" class="copyright">
+				Trademarks used are owned by their respective owners. This mod is not endorsed or affiliated with the copyright holders of the base game in any form.</a>	
+			</span>
+			
+		</footer>
+
+	</body>
+</html>

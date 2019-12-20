@@ -2,10 +2,10 @@
 
 <html lang="en">
 	<head>
-		<title>IW4x</title>
+		<title>Private Match Guide</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="IW4x allows you to set up your own dedicated servers with modifications for Modern Warfare 2 on top of a decentralized network." />
-		<meta name="keywords" content="IW4x, iw4x mw2, iw4x download, MW2, MW2 Client, Dedicated Server, Mod Support, IW4, Custom Maps, How to install iw4x, iw4x tutorial, black screen" />
+		<meta name="description" content="Find out how to play with friends online via private match."/>
+		<meta name="keywords" content="IW4x, IW4x play with friends, iw4x invite friends, iw4x private match, private match guide, Mw2 iw4x, custom games"/>
 		<meta name="theme-color" content="#317EFB"/>
 		<link rel="manifest" href="manifest.json">
 		<link rel="icon" href="iw4xIcon.ico">
@@ -51,50 +51,66 @@
 		</header>
 
 		<!-- Banner -->
-		<section id="banner">
+		<section id="bannerSkinny">
 			<div class="inner">
-				<h2>IW4x</h2>
-				<p data-langkey="index-BannerSlogan">The same MW2 you know and love, just better...</p>
-				<ul class="actions">
-					<li><a data-langkey="getStarted" href="#one" class="button big scrolly">Get Started</a></li>
-				</ul>
+				<h2>Private Match Guide</h2>
+				<p>A private match is a great way to play private games with friends without the hastle of setting up a dedicated server.</p>
+				<a href="guides.html" class="button">Return to Guide list</a>
 			</div>
 		</section>
 
-		<!-- One -->
+		<!-- one -->
 		<section id="one" class="wrapper style1">
+			
 			<div class="container">
-				<header class="major">
-					<h2 data-langkey="index-WelcomeText">Welcome to IW4x</h2>
-					<p data-langkey="index-SiteDescription">This site aims to provide you with all the information you need to install IW4x, make use of its many features and get help with any issues you may be encountering. Please choose one of the below topics to get started!</p>
-				</header>
-				<div class="row">
-					<div class="6u 6u(2) 12u$(3)">
-						<article class="box post">
-							<a href="installGuide.html" class="image fit"><img src="images/install.jpg" alt="Install IW4x" /></a>
-							<h3 data-langkey="index-WantInstallIw4x">I want to install IW4x</h3>
-							<p data-langkey="index-WantInstallIw4xDescription">You may be new to IW4x or a returning player, whichever you may be click the following link to get setup!</p>
-							<ul class="actions">
-								<li><a data-langkey="index-WantInstallIw4xButton" href="installGuide.html" class="button">Install Guide</a></li>
-							</ul>
-						</article>
-					</div>
-					<div class="6u 6u$(2) 12u$(3)">
-						<article class="box post">
-							<a href="supportCenter.html" class="image fit"><img src="images/support.jpg" alt="Support Center" /></a>
-							<h3 data-langkey="index-INeedHelp">I need help with IW4x</h3>
-							<p data-langkey="index-INeedHelpDescription">Experiencing issues? Crashes, errors, no servers? Whatever it may be, we are here to help. Click the following link to get help!</p>
-							<ul class="actions">
-								<li><a data-langkey="index-INeedHelpButton" href="supportCenter.html" class="button">Support Center</a></li>
-							</ul>
-						</article>
-					</div>
-				</div>
+				
+				<h2><u>Introduction</u></h2>
+				<p>There are two methods to do this, one using the in-game friends list and the other using the console to connect directly.</p>
+				
+				<h3><u>Method 1</u> - (Friends List):</h3>
+				<p><b>Note: Requires you to have each other added as friends on Steam and to have steam running.</b></p>
+				<ol>
+					<li>Start iw4x and select 'CREATE GAME' from the main menu and click 'START GAME'</li>
+					<li>Tell your friends to press the F key on the main menu to bring up the in-game friends list</li>
+					<li>Tell them to double click your name to join your game (If they hear a chicken noise, see "Failed to join")</li>
+				</ol>
+				
+				<h3><u>Method 2</u> - (Connect Command):</h3>
+				<ol>
+					<li>Go to <a href="http://whatismyipaddress.com">WhatIsMyIpAddress.com</a> and PM anyone who wants to join your IP Address</li>
+					<li>Start iw4x and select 'CREATE GAME' from the main menu</li>
+					<li>Click 'START GAME'</li>
+					<li>Tell anyone who wants to join, open the console by using the tilde key while at the main menu</li>
+					<li>Get them to enter the following command, replacing 'HostsIPAddress' with the IP you previously sent him:<br><b>/connect HostsIPAddress:28960</b></li>
+				</ol>
+				
+				<h3><u>Failed to join</u></h3>
+				<p>If you followed the above correctly and your friends are unable to join them you the host of the private match will need to port forward in order for them to connect to you.</p>
+				<ul>
+					<li>Port Forward port 28960 UDP & TCP</li>
+					<li>You can find how to do this by Googling 'YourRouterName Port Forwarding'</li>
+				</ul>
+				<p><b>Note: If port forwarding is too complex, just stick to playing public servers, or maybe join an empty server so you have the same experience as a private game.</b></p>
+				
+				<h3><u>Side Notes</u></h3>
+				<p><span class="image right"><img src="images/guidePrivateMatch.jpg" alt="" /></span>This is the Tilde Key on your keyboard, however if have a keyboard from a different region please consult google images to learn what key to press on your given keyboard:</p>
+				<p>Handy website to lookup your IP Address (You want the IPv4 address): <a href="http://whatismyipaddress.com">WhatIsMyIpAddress.com</a></p>
+				<br>
+
 			</div>
+
+		</section>
+			
+		<!-- CTA -->
+		<section id="cta" class="wrapper style3">
+			<h2 data-langkey="discordHelp">Still not sure what you need?</h2>
+			<ul class="actions">
+				<li><a data-langkey="discordHelpLink" href="https://discordapp.com/invite/sKeVmR3" class="button big">Visit Our Discord</a></li>
+			</ul>
 		</section>
 
 		<!-- Return to Top -->
-		<a href="#banner" id="return-to-top" class="scrolly"><i class="icon fa-chevron-up"></i></a>
+		<a href="#bannerSkinny" id="return-to-top" class="scrolly"><i class="icon fa-chevron-up"></i></a>
 
 		<!-- Footer -->
 		<footer id="footer">

@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<title>Console Commands Guide</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="View all the useful console commands with detailed descriptions, tips and more."/>
+		<meta name="keywords" content="IW4x, iw4x console commands mw2, mw2 console commands, iw4x cheat commands, devmap, cg_fov, console iw4x, console mod command, MW2, MW2 Client, Dedicated server commands, Cheat protected commands, About console commands, Support, IW4 console commands, custom commands, monkey toy"/>
+		<meta name="theme-color" content="#317EFB"/>
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" href="iw4xIcon.ico">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+		<header id="header" class="alt skel-layers-fixed">
+			<nav id="nav">
+				<ul>
+					<li><a data-langkey="navbar-Home" href="index.html">Home</a></li>
+					<li><a data-langkey="navbar-Guides" href="guides.html">Guides</a></li>
+					<li><a data-langkey="navbar-Downloads" href="downloads.html">Downloads</a></li>
+					<li><a data-langkey="navbar-Support" href="supportCenter.html">Support</a></li>
+					<li><a data-langkey="navbar-Faq" href="faq.html">FAQ</a></li>
+					<li><a data-langkey="navbar-About" href="about.html">About</a></li>
+					<li>
+						<a href="" class="icon fa-angle-down"><span id="currentFlag" class="flag-icon flag-icon-gb"></span></a>
+						<ul>
+							<li><a href="" onclick="switchLanguage('gb')"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+							<li><a href="" onclick="switchLanguage('de')"><span class="flag-icon flag-icon-de"></span> German</a></li>
+							<li><a href="" onclick="switchLanguage('es')"><span class="flag-icon flag-icon-es"></span> Spanish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="bannerSkinny">
+			<div class="inner">
+				<h2>Console Commands Guide</h2>
+				<a href="guides.html" class="button">Return to Guide list</a>
+			</div>
+		</section>
+
+		<!-- one -->
+			<section id="one" class="wrapper style1">
+				
+				<div class="container">
+					<h3>Contents:</h3>
+
+					<h4>Fast Restart:</h4>
+					<p>Quickly restarts the match.</p>
+					<pre>
+						<code>
+fast_restart
+<b>Note:</b> This just restarts the map it doesn't reload it
+						</code>
+					</pre>
+
+					<h4>Map Restart:</h4>
+					<p>Fully restart the map.</p>
+					<pre>
+						<code>
+map_restart
+<b>Note:</b> This restarts the map and reloads it
+						</code>
+					</pre>
+
+					<h4>Field of View (FOV)</h4>
+					<p>Manually tweak your desired FOV value.</p>
+					<pre>
+						<code>
+cg_fov 90
+						</code>
+					</pre>
+
+					<h4>Sensitivity</h4>
+					<p>The command is useful for fine tuning of your desired sensitivity.</p>
+					<pre>
+						<code>
+sensitivity 2
+						</code>
+					</pre>
+
+					<h4>Show FPS / Coords</h4>
+					<p>Following command can be used to both display your current FPS but also your coordinates</p>
+					<pre>
+						<code>
+fast_restart
+						</code>
+					</pre>
+
+					<h4>Set Map:</h4>
+					<p>The following commands can be used to change map.</p>
+					<pre>
+							<code>
+<u>BASE GAME:</u>
+<b>map mp_afghan</b>					(Afgan)
+<b>map mp_boneyard</b>					(Scrapyard)
+<b>map mp_brecourt</b>					(Wasteland)
+<b>map mp_checkpoint</b>				(Karachi)
+<b>map mp_derail</b>					(Derail)
+<b>map mp_estate</b>					(Estate)
+<b>map mp_favela</b>					(Favela)
+<b>map mp_highrise</b>					(Highrise)
+<b>map mp_nightshift</b>				(Skidrow)
+<b>map mp_invasion</b>					(Invasion)
+<b>map mp_quarry</b>					(Quary)
+<b>map mp_rundown</b>					(Rundown)
+<b>map mp_rust</b>					(Rust)
+<b>map mp_subbase</b>					(Subbase)
+<b>map mp_terminal</b>					(Terminal)
+<b>map mp_underpass</b>				(Underpass)
+
+<u>DLC1 STIMULUS:</u>
+<b>map mp_complex</b>					(Bailout)
+<b>map mp_crash</b>					(Crash)
+<b>map mp_overgrown</b>				(Overgrown)
+<b>map mp_compact</b>					(Salvage)
+<b>map mp_storm</b>					(Storm)
+
+<u>DLC2 RESURGENCE:</u>
+<b>map mp_abandon</b>					(Carnival)
+<b>map mp_fuel2</b>					(Fuel)
+<b>map mp_strike</b>					(Strike)
+<b>map mp_trailerpark</b>				(Trailer Park)
+<b>map mp_vacant</b>					(Vacant)
+
+<u>DLC3 NUKETOWN:</u>
+<b>map mp_nuked</b>					(Nuketown)
+
+<u>DLC4 CLASSICS 1:</u>
+<b>map mp_cross_fire</b>				(Crossfire)
+<b>map mp_bloc</b>					(Bloc)
+<b>map mp_cargoship</b>				(Cargoship)
+
+<u>DLC5 CLASSICS 2:</u>
+<b>map mp_killhouse</b>				(Killhouse)
+<b>map mp_bog_sh</b>					(Bog)
+
+<u>DLC6 FREIGHTER:</u>
+<b>map mp_cargoship_sh</b>				(Freighter)
+
+<u>DLC7 RESURRECTION:</u>
+<b>map mp_shipment_long</b>				(Shipment:Long)
+<b>map mp_rust_long</b>				(Rust:Long)
+<b>map mp_firingrange</b>				(Firing Range)
+
+<u>DLC8 RECYCLED:</u>
+<b>map mp_storm_spring</b>				(Chemical Plant)
+<b>map mp_fav_tropical</b>				(Tropical: Favela)
+<b>map mp_estate_tropical</b>				(Tropical: Estate)
+<b>map mp_crash_tropical</b>				(Tropical: Crash)
+<b>map mp_bloc_sh</b>					(Forgotten City)
+
+<u>SP MAPS to MP:</u>
+<b>map oilrig</b>					(Oilrig)
+<b>map iw4_credits</b>					(IW4_Credits)
+<b>map co_hunted</b>					(Village)
+
+							</code>
+					</pre>
+
+					<h4>Set Gamemode:</h4>
+					<p>The following commands can be used to change gamemode.</p>
+					<pre>
+							<code>
+<b>g_gametype war</b>						(Team Deathmatch)
+<b>g_gametype dm</b>						(Free-For-All)
+<b>g_gametype dom</b>						(Domination)
+<b>g_gametype koth</b>						(Headquarters)
+<b>g_gametype sab</b>						(Sabotage)
+<b>g_gametype sd</b>						(Search and Destroy)
+<b>g_gametype ctf</b>						(Capture the Flag)
+<b>g_gametype dd</b>						(Demolition)
+<b>g_gametype oneflag</b>					(One-Flag Capture the Flag)
+<b>g_gametype gtnw</b>						(Global Thermonuclear War - Cut Content)
+<b>g_gametype arena</b>					(Arena - Cut Content)
+							</code>
+					</pre>
+
+					<h4>Movement Speed</h4>
+					<p>Higher the number the faster the movement. Default = 190</p>
+					<pre>
+						<code>
+g_speed
+						</code>
+					</pre>
+
+					<h4>Gravity</h4>
+					<p>Higher the number the stronger the gravity.  Default = 600</p>
+					<pre>
+						<code>
+g_gravity
+						</code>
+					</pre>
+
+					<h4>Kicking Players</h4>
+					<p>There are two different commands for kicking players, one simply uses their name to identify who to kick and the other uses their client id (Number). 
+						The kick command uses the players name as a parameter (If their name is in different colors, that does not affect it, just type what you see). The other command is clientkick, if you wish to find out players client ID then
+					use the status command.</p>
+					<pre>
+						<code>
+kick xXOptic_PredatorXx
+						</code>
+						<code>
+status
+						</code>
+						<code>
+clientkick 2
+						</code>
+					</pre>
+
+					<br>
+				</div>
+			</section>
+			
+		<!-- CTA -->
+		<section id="cta" class="wrapper style3">
+			<h2 data-langkey="discordHelp">Still not sure what you need?</h2>
+			<ul class="actions">
+				<li><a data-langkey="discordHelpLink" href="https://discordapp.com/invite/sKeVmR3" class="button big">Visit Our Discord</a></li>
+			</ul>
+		</section>
+
+		<!-- Return to Top -->
+		<a href="#bannerSkinny" id="return-to-top" class="scrolly"><i class="icon fa-chevron-up"></i></a>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://discordapp.com/invite/sKeVmR3" class="icon fa-discord"><span data-langkey="footer-DiscordLink"class="label">IW4x Discord</span></a></li>
+				<li><a href="https://www.youtube.com/channel/UCGF7Wpkhgn-jErmW-rHRd1g" class="icon fa-youtube"><span data-langkey="footer-YoutubeLink" class="label">IW4x Youtube</span></a></li>
+				<li><a href="https://github.com/IW4x" class="icon fa-github"><span data-langkey="footer-GithubLink" class="label">IW4x GitHub</span></a></li>
+			</ul>
+			<ul class="menu">
+				<li><a data-langkey="footer-TorLink" href="https://iw4xcachep26muba.onion.ly/">IW4x Tor Mirror</a></li>
+				<li><a data-langkey="footer-WikiLink" href="https://github.com/Jawesome99/IW4x/wiki">IW4x Wiki</a></li>
+			</ul>
+			<span data-langkey="footer-Copyright" class="copyright">
+				Trademarks used are owned by their respective owners. This mod is not endorsed or affiliated with the copyright holders of the base game in any form.</a>	
+			</span>
+			
+		</footer>
+
+	</body>
+</html>
