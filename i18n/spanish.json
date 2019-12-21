@@ -45,22 +45,23 @@
     "downloads-ClientFilesTitle" : "Archivos del Cliente IW4x (v0.6.0)",
     "downloads-ClientFilesContents" : "Archivo ZIP que contiene los archivos del cliente.",
     "downloads-ClientFilesIncludes" : "Incluye: Todos los archivos de IW4x para jugar, con la posibilidad de jugar mapas del Modo Campaña como Plataforma petrolífera (solo si tienes el Modo Campaña instalado)",
-    "downloads-ClientFilesStats" : "Tamaño: 117.7 MB<br>MD5:<br>ca1fed2d03763901755981b792a46055",
+    "downloads-ClientFilesStats" : "Tamaño: 117.7 MB",
     
     "downloads-DlcFilesTitle" : "IW4x DLC",
     "downloads-DlcFilesContents" : "Contiene los mapas DLC personalizados exclusivos del cliente IW4x.",
     "downloads-DlcFilesIncludes" : "Incluye: Nuketown, Classics Pack #1, Classics Pack #2, Freighter, Resurrection Pack y Recycled Pack.",
-    "downloads-DlcFilesStats1" : "<u>Descarga Directa:</u><br>Tamaño: 2.08GB<br>MD5:<br>dd93e387fa88890fdc3c36a33f5feda9",
+    "downloads-DlcFilesStats1" : "<u>Descarga Directa:</u><br>Tamaño: 2.08GB",
     "downloads-DlcFilesStats2" : "<u>Torrent:</u><br>Tamaño: 2.13GB",
     
     "downloads-AllInOneFilesTitle" : "Pack Todo-en-Uno",
     "downloads-AllInOneFilesContents" : "Este paquete contiene todo lo que necesitas para empezar a jugar, con todo el contenido disponible para IW4x.",
     "downloads-AllInOneFilesIncludes" : "Incluye: Juego Base + DLC 1 y 2 (Stimulus Pack y Resurgence Pack) + IW4x (v0.6.0) + IW4x DLC",
-    "downloads-AllInOneFilesStats1" : "<u>Descarga Directa:</u><br>Tamaño: 14.85GB<br>MD5:<br>17c64c5d0cfc331138f71446fa80f4ec",
+    "downloads-DirectX" : "<b>Please Note:</b> <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=19743\">DirectX 9.0</a> needs to be installed to play.",
+    "downloads-AllInOneFilesStats1" : "<u>Descarga Directa:</u><br>Tamaño: 14.85GB",
     "downloads-AllInOneFilesStats2" : "<u>Torrent:</u><br>Tamaño: 11.39GB",
 
     "downloads-DirectDownload" : "Descarga Directa",
-    "downloads-Torrent" : "Torrent",
+    "downloads-Torrent" : "Torrent [English Only]",
     "downloads-DirectDownload1" : "Descarga Directa #1",
     "downloads-DirectDownload2" : "Descarga Directa #2",
 

@@ -45,22 +45,23 @@
    "downloads-ClientFilesTitle" : "IW4x Client Dateien (v0.6.0)",
    "downloads-ClientFilesContents" : "Zip Datei, die die Client Dateien enthält.",
    "downloads-ClientFilesIncludes" : "Beinhaltet: Benötigte Dateien um IW4x zu spielen & erlaubt das Spielen auf Einzelspieler Karten (Solange die MW2 Insatllation die Einzelspieler Dateien enthält)",
-   "downloads-ClientFilesStats" : "Dateigröße: 117.7 MB<br>MD5:<br>ca1fed2d03763901755981b792a46055",
+   "downloads-ClientFilesStats" : "Dateigröße: 117.7 MB",
    
    "downloads-DlcFilesTitle" : "IW4x DLC",
    "downloads-DlcFilesContents" : "Enthält die IW4x-exklusiven DLC Karten.",
    "downloads-DlcFilesIncludes" : "Enthält: Nuketown, Classic Pack #1, Classic Pack #2, Freighter, Resurrection Pack & Recycled Pack",
-   "downloads-DlcFilesStats1" : "<u>Direkter Download:</u><br>Dateigröße: 2.08GB<br>MD5:<br>dd93e387fa88890fdc3c36a33f5feda9",
+   "downloads-DlcFilesStats1" : "<u>Direkter Download:</u><br>Dateigröße: 2.08GB",
    "downloads-DlcFilesStats2" : "<u>Torrent:</u><br>Dateigröße: 2.13GB",
    
    "downloads-AllInOneFilesTitle" : "Alles-in-einem Paket",
    "downloads-AllInOneFilesContents" : "Dieses Paket enthält alles, was zum Spielen benötigt wird inklusive allen Erweiterungen (DLCs) für IW4x. ",
    "downloads-AllInOneFilesIncludes" : "Enthält: (MW2 Basis Spiel + MW2 Basis DLCs + IW4x Client Dateien (v0.6.0) + Iw4x DLCs)",
-   "downloads-AllInOneFilesStats1" : "<u>Direkter Download:</u><br>Dateigröße: 14.85GB<br>MD5:<br>d319f944f3f091aed58d232ffa2e010c",
+   "downloads-DirectX" : "<b>Please Note:</b> <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=19743\">DirectX 9.0</a> needs to be installed to play.",
+   "downloads-AllInOneFilesStats1" : "<u>Direkter Download:</u><br>Dateigröße: 14.85GB",
    "downloads-AllInOneFilesStats2" : "<u>Torrent:</u><br>Dateigröße: 11.39GB",
 
    "downloads-DirectDownload" : "Direkter Download",
-   "downloads-Torrent" : "Torrent",
+   "downloads-Torrent" : "Torrent [English Only]",
    "downloads-DirectDownload1" : "Direkter Download #1",
    "downloads-DirectDownload2" : "Direkter Download #2",
 

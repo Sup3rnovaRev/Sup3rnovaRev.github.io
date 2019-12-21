@@ -45,22 +45,23 @@
     "downloads-ClientFilesTitle" : "IW4x Client Files (v0.6.0)",
     "downloads-ClientFilesContents" : "Zip file containing the client files.",
     "downloads-ClientFilesIncludes" : "Includes: Barebones files to play iw4x & enables play on single player maps such as oilrig (Given you have the SP files)",
-    "downloads-ClientFilesStats" : "File Size: 117.7 MB<br>MD5:<br>ca1fed2d03763901755981b792a46055",
+    "downloads-ClientFilesStats" : "File Size: 117.7 MB",
     
     "downloads-DlcFilesTitle" : "IW4x DLC",
     "downloads-DlcFilesContents" : "Contains the custom DLC maps exclusive to the iw4x client.",
     "downloads-DlcFilesIncludes" : "Includes: Nuketown, Classic Pack #1, Classic Pack #2, Freighter, Resurrection Pack & Recycled Pack",
-    "downloads-DlcFilesStats1" : "<u>Direct Download:</u><br>File Size: 2.08GB<br>MD5:<br>dd93e387fa88890fdc3c36a33f5feda9",
+    "downloads-DlcFilesStats1" : "<u>Direct Download:</u><br>File Size: 2.08GB",
     "downloads-DlcFilesStats2" : "<u>Torrent:</u><br>File Size: 2.13GB",
     
     "downloads-AllInOneFilesTitle" : "All-In-One Pack",
     "downloads-AllInOneFilesContents" : "This pack contains everything you need to start playing, complete with all the content availble for IW4x. ",
     "downloads-AllInOneFilesIncludes" : "Includes: (MW2 Basegame + MW2 Basegame DLC's + IW4x Client Files (v0.6.0) + Iw4x DLC)",
-    "downloads-AllInOneFilesStats1" : "<u>Direct Download:</u><br>File Size: 14.85GB<br>MD5:<br>d319f944f3f091aed58d232ffa2e010c",
+    "downloads-DirectX" : "<b>Please Note:</b> <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=19743\">DirectX 9.0</a> needs to be installed to play.",
+    "downloads-AllInOneFilesStats1" : "<u>Direct Download:</u><br>File Size: 14.85GB",
     "downloads-AllInOneFilesStats2" : "<u>Torrent:</u><br>File Size: 11.39GB",
 
     "downloads-DirectDownload" : "Direct Download",
-    "downloads-Torrent" : "Torrent",
+    "downloads-Torrent" : "Torrent [English Only]",
     "downloads-DirectDownload1" : "Direct Download #1",
     "downloads-DirectDownload2" : "Direct Download #2",
 
