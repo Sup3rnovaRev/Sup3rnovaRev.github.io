@@ -15,6 +15,21 @@ $(window).scroll(function() {
 	}
 });
 
+$(document).ready(function(){   
+	if (localStorage.cookiesAllowed != "true"){
+		setTimeout(function () {
+			$("#cookieConsent").fadeIn(200);
+		}, 2000);
+		$("#closeCookieConsent, .cookieConsentOK").click(function() {
+			$("#cookieConsent").fadeOut(200);
+		}); 
+	}
+});
+
+function allowCookies(){
+	localStorage.cookiesAllowed = true;
+}
+
 // Randomly Choose Gdrive link
 // Could do with re-write as only all in one files are region bound, to reduce script length
 function driveLink(type, langauge){
