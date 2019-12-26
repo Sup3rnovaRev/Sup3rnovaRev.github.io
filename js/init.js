@@ -255,13 +255,13 @@ function downloadSwitcherGB(){
 }
 //------
 
-function christmasSnow(){
-	var head = document.getElementsByTagName('head')[0];
-	var script = document.createElement('script');
-	script.src = 'js/snowstorm.js';
-	script.type = 'text/javascript';
-	head.appendChild(script);
-}
+// function christmasSnow(){
+// 	var head = document.getElementsByTagName('head')[0];
+// 	var script = document.createElement('script');
+// 	script.src = 'js/snowstorm.js';
+// 	script.type = 'text/javascript';
+// 	head.appendChild(script);
+// }
 
 
 
@@ -446,8 +446,8 @@ function christmasSnow(){
 
 	});
 
-	if (new Date().getMonth() == 11){
-		christmasSnow();
-	}
+	// if (new Date().getMonth() == 11){
+	// 	christmasSnow();
+	// }
 
 })(jQuery);
