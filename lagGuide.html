@@ -10,10 +10,10 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-154878289-1');
 		</script>
-		<title>IW4x Guides</title>
+		<title>Lag Guide</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="All iw4x guides, all in one place."/>
-		<meta name="keywords" content="iw4x, iw4x guides, guides iw4x, MW2 guides, private match guide, controller guide, iw4x unlock all guide, iw4x console commands" />
+		<meta name="description" content="Find out what causes lag and what you can do to fight it."/>
+		<meta name="keywords" content="IW4x, lag, low fps, high ping, Mw2 iw4x, servers"/>
 		<meta name="theme-color" content="#317EFB"/>
 		<meta property="og:image" content="iw4xSplashAlt2.jpg">
 		<link rel="manifest" href="manifest.json">
@@ -62,32 +62,58 @@
 		<!-- Banner -->
 		<section id="bannerSkinny">
 			<div class="inner">
-				<h2 data-langkey="guides-Banner">Guides</h2>
+				<h2>Lag Guide</h2>
+				<p>Some players may experience lag but are unsure where it comes from and what they can do to fight it, this guide is going to cover the basic troubleshooting steps to enable a lag-free experience</p>
+				<a href="guides.html" class="button">Return to Guide list</a>
 			</div>
 		</section>
 
 		<!-- one -->
-		<section id="main" class="wrapper style1">
-			<header class="major">
-				<h2 data-langkey="guides-Contents">Contents:</h2>
-			</header>
-			<div class="container">
-				<ul>
-					<li><a data-langkey="guides-PrivateMatch" href="privateMatchGuide.html">Hosting a private match with friends</a></li>
-					<li><a data-langkey="guides-PublicServer" href="publicServerGuide.html">Hosting a public server</a></li>
-					<li><a href="OfflineServerGuide.html">Hosting a offline LAN server</a></li>
-					<li><a data-langkey="guides-UnlockAll" href="unlockAllGuide.html">How to unlock all / set a custom rank</a></li>
-					<li><a data-langkey="guides-Controller" href="controllerGuide.html">Using a controller on IW4x</a></li>
-					<li><a data-langkey="guides-Customise" href="customisationGuide.html">How to customise your game (Camos/Skins/Menus/Music)</a></li>
-					<li><a data-langkey="guides-Mods" href="modGuide.html">Installing / using mods</a></li>
-					<li><a data-langkey="guides-Binds" href="bindsGuide.html">Creating custom binds</a></li>
-					<li><a data-langkey="guides-ConsoleCommands" href="consoleCommandsGuide.html">Console commands</a></li>
-					<li><a href="installGuide.html">IW4x Install Guide</a></li>
-					<li><a href="repairGuide.html">Repair Guide</a></li>
-					<li><a href="lagGuide.html">Lag Guide</a></li>
-				</ul>
+		<section id="one" class="wrapper style1">
+			
+			<div class="container">				
+				<h3><u>Step 1</u> - Identifying Lag using the Lagometer:</h3>
+				<ol>
+					<li>Start iw4x and join any public server (this won't work in private match).</li>
+					<li>Open the console using the tilde key on your keyboard (the key below escape) and type in the following command (you can disable the Lagometer afterwards by using 0 instead of 1):</li>
+					<br>
+					<span class="image"><img src="images/lagGuideLagometer1.jpg" alt="Lagometer"></span>
+					<br><br>
+					<li>Play the game for a while and observe what the Lagometer shows.</li>
+					<br>
+					<span class="image"><img src="images/lagGuideLagometer2.jpg" alt="Lagometer"></span>
+					<br><br>
+					The Lagometer is divided into two parts, this is what they mean:
+					<br><br>
+					<u>Upper part:</u>
+					<br>
+					<font color="#0059FF">Blue</font>: Everything is fine, your pc is fast enough to deliver stable FPS.
+					<br>
+					<font color="#FFD500";>Yellow</font>: You are dropping frames, your pc is unable to keep up with the game.
+					<br><br>
+					<u>Lower part:</u>
+					<br>
+					<font color="#00FF08";>Green</font>: You are not experiencing packet loss, incoming packets arrive correctly, the height of the green bar also displays how high your ping is.
+					<br>
+					<font color="#FFD500";>Yellow</font>: You are experiencing packet loss, incoming packets are incomplete.
+					<br>
+					<font color="#FF0000";>Red</font>: You are dropping packets, this is worst case.
+					<br>	
+				</ol>				
+				<h3><u>Step 2a</u> - Fighting FPS Lag:</h3>
+				<ol>
+					<li>If you are using a laptop to play the game and that laptop has a dedicated gpu (graphics card, for example nvidia gt960m) make sure the game uses that instead of the graphics chip integrated into your cpu. Have a look at <a target="_blank" rel="noopener noreferrer" href="https://support.ubisoft.com/en-gb/faqs/000027100/Switching-to-the-laptop-s-dedicated-GPU/#:~:text=Switching%20to%20the%20dedicated%20Nvidia%20GPU&text=%2D%20Open%20the%20tab%20Program%20Settings,Finally%2C%20save%20your%20changes.">this guide</a> on how to to that.</li>
+					<li>If you do not have a dedicated gpu and are using integrated graphics have a look at <a target="_blank" rel="noopener noreferrer" href="https://appuals.com/how-to-increase-intel-graphics-dedicated-video-memory/">this Guide</a> on how to increase the amount of VRAM an integrated graphics chip can use.</li>
+					<li>Take note of your PC Specs, IW4x/MW2 is an old game but it won't run on anything, it's also known to use a bit more RAM and VRAM than the steam version of MW2. Make sure you have atleast 2GB of free RAM the game can use (not total RAM, free RAM, 2GB in total is not enough). Also make sure you have atleast 1GB of VRAM (video memory).</li>
+					<li>Close any programs you have running in the background that use alot of resources (if you only have a small amount of RAM a common example of a program that uses alot of RAM is Google Chrome).</li>
+				</ol>				
+                <h3><u>Step 2b</u> - Fighting Network Lag:</h3>
+				<ol>
+					<li>If the lagometer shows you are experiencing packet loss there isn't really anything you can modify on IW4x itself to fix that as it's an issue related to your internet connection. Go to <a target="_blank" rel="noopener noreferrer" href="https://packetlosstest.com/">this site</a> and select a game from the dropdown menu (for example Apex Legends) then click "Start Test". This will tell you if your connection is dropping packets.</li>
+					<li>Make sure you don't have downloads or other programs running in the background that cause alot of network traffic.</li>
+					<br>
+				</ol>
 			</div>
-
 		</section>
 			
 		<!-- CTA -->
