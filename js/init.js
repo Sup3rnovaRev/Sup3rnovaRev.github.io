@@ -46,90 +46,42 @@ function driveLink(type, langauge){
 		var matrix = [
 
 			[	// GB
-				[	// Client Files (V0.6.0)
-					'https://drive.google.com/uc?id=1vWBWIB8pNCAbWCjPk9B6kCwFF3DNurGi',
-					'https://drive.google.com/uc?id=1V0zFB0L-s22PeqF374rtyfGKtNttNPfE',
-					'https://drive.google.com/uc?id=1HZOaV__EWFu-_7zmWgBONajQA7GxV5lB',
-					'https://iw4x-my.sharepoint.com/:u:/g/personal/emosewaj_iw4x_onmicrosoft_com/ET2Co4H-H4lGqKUBxlY66V4Bn4UOQjUSHjK3hZIeDLSXhQ?e=AwyZBZ&download=1'
+				[	// Client Files (V0.6.0) Hotfix Build
+					'https://drive.google.com/file/d/1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC/view?usp=sharing'
 				],
 				[	// DLC Files
 					'https://drive.google.com/uc?id=1d7mpdtyZdCiS4Trf_XHhU1Wxfpa22kYM',
 					'https://drive.google.com/uc?id=1Kb_bD-Tdguy75On2D2jN5Xvo1yo5zhIT',
-					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU',
-					'https://iw4x-my.sharepoint.com/:u:/g/personal/emosewaj_iw4x_onmicrosoft_com/EYnWYmCXExpEvn-bL2262Q0BSy0jVZF0FXslvpJEDPE5Fw?e=gPx8RF&download=1'
+					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU'
 				],
-				[	// All in one Files (V0.6.0)		
-					'https://drive.google.com/uc?id=1wRPdUV-oz9J8DCBgj3RNk2rT_xMiZyIY',
-					'https://drive.google.com/uc?id=1RChya7NJ_wPTlB8-lXv4cJzv3T-8Pwfl',
-					'https://drive.google.com/uc?id=1WWEtzJD0awmg6NlVyu5ezAKx_l_71Cie',
-					'https://drive.google.com/uc?id=1ALqtTIT7JDd97_ZD5oMVAh-1Oox0XZ7e',
-					'https://drive.google.com/uc?id=1cLJZpb4QbmT62QkoZB8v91tgzpGuYHMa',
-					'https://drive.google.com/uc?id=18pTq_z2fHIqxLMu8gTetRUHBRGbgeU6I',
-					'https://drive.google.com/uc?id=11ZWM7jG65LP9F6e8xNy788K4rtq4KYt1',
-					'https://drive.google.com/uc?id=1uyza2ezlL64-T4xAPwcH2vzPTvOnwqyb',
-					'https://drive.google.com/uc?id=10TYAz9Lkh4wlvvkBKhBliaU0ASYi_V--',
-					'https://drive.google.com/uc?id=11_AfnVPT47167HivGGT0hKyHGtwlIh1j',
-					'https://drive.google.com/uc?id=18OYArKiasC7_LC2I0kIzkN9LYxBKTNDm',
-					'https://drive.google.com/uc?id=1BNixhVuTrGUXRP__w5RUyVjH3_nF4vaA',
-					'https://drive.google.com/uc?id=18Omb6nxNWPXr12aleEvDf1zD5pGbopaJ',
-					'https://drive.google.com/uc?id=1AXnjtBOFChDlC44YNoa_1FncTiYgWOIg',
-					'https://drive.google.com/uc?id=1NCj4cmzGSiP19wsoAGTTT6pDAOCtpSuc',
-					'https://drive.google.com/uc?id=1O_wFOvcsqVgl8yWgI0rkxHPUB23yQiU8',
-					'https://drive.google.com/uc?id=1S7lrJMFMVUWNIAb_SsENuKPXePLMT47G',
-					'https://drive.google.com/uc?id=1djQVjGR8HrKq79S_W1aCj_bycpHT5r3S',
-					'https://drive.google.com/uc?id=1fpVHo25UoGrneTGa6uKv_cu7E6F2ruSs'
+				[	// All in one Files (V0.6.0) Hotfix Build	
+					'https://drive.google.com/file/d/1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB/view?usp=sharing'
 				]
 			],
 			[	// DE
-				[	// Client Files (V0.6.0)
-					'https://drive.google.com/uc?id=1vWBWIB8pNCAbWCjPk9B6kCwFF3DNurGi',
-					'https://drive.google.com/uc?id=1V0zFB0L-s22PeqF374rtyfGKtNttNPfE',
-					'https://drive.google.com/uc?id=1HZOaV__EWFu-_7zmWgBONajQA7GxV5lB',
-					'https://iw4x-my.sharepoint.com/:u:/g/personal/emosewaj_iw4x_onmicrosoft_com/ET2Co4H-H4lGqKUBxlY66V4Bn4UOQjUSHjK3hZIeDLSXhQ?e=AwyZBZ&download=1'
+				[	// Client Files (V0.6.0) Hotfix Build
+					'https://drive.google.com/file/d/1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC/view?usp=sharing'
 				],
 				[	// DLC Files
 					'https://drive.google.com/uc?id=1d7mpdtyZdCiS4Trf_XHhU1Wxfpa22kYM',
 					'https://drive.google.com/uc?id=1Kb_bD-Tdguy75On2D2jN5Xvo1yo5zhIT',
-					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU',
-					'https://iw4x-my.sharepoint.com/:u:/g/personal/emosewaj_iw4x_onmicrosoft_com/EYnWYmCXExpEvn-bL2262Q0BSy0jVZF0FXslvpJEDPE5Fw?e=gPx8RF&download=1'
+					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU'
 				],
-				[	// All in one Files (V0.6.0)
-					'https://drive.google.com/uc?id=1y0xrnmkZGmblWeFaSVSSn1PTsg_YXj2I',
-					'https://drive.google.com/uc?id=17wx-9T1GN0uL0JpPR0V_5kTmA8yyW1-s',
-					'https://drive.google.com/uc?id=1CCGElHGv7k-eQRHqjM04eeIXmQ9Fu7Z_',
-					'https://drive.google.com/uc?id=1HW8ditvKdKf6HBMnAe4Jol3mV2phI3qr',
-					'https://drive.google.com/uc?id=1OGmGJ8gdUwbSY0l_JSqguFZLHDyNsfRE',
-					'https://drive.google.com/uc?id=1bjjnqkril9MRadTNr_A0JOaQ7hQSXYYn',
-					'https://drive.google.com/uc?id=1dLqxyrP20hNbs3DDR6viIFAvWno7tjwp',
-					'https://drive.google.com/uc?id=1rIgVjCsZzjyA4gsP0Mgsfc2A72H3x3sf',
-					'https://drive.google.com/uc?id=1zJuEsmQPuMd3RIpb15KmQCv3e1Ufz9OV',
-					'https://drive.google.com/uc?id=1wCPoJda7Sopdc4KQIgYbd7hAdgmLebLe',
-					'https://drive.google.com/uc?id=1zgjwTV99qOn8RD6x_MxMnP1zD4N-Dtjr',
+				[	// All in one Files (V0.6.0) Hotfix Build
+					'https://drive.google.com/file/d/1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB/view?usp=sharing'
 				]
 			],
 			[	// ES
-				[	// Client Files (V0.6.0)
-					'https://drive.google.com/uc?id=1vWBWIB8pNCAbWCjPk9B6kCwFF3DNurGi',
-					'https://drive.google.com/uc?id=1V0zFB0L-s22PeqF374rtyfGKtNttNPfE',
-					'https://drive.google.com/uc?id=1HZOaV__EWFu-_7zmWgBONajQA7GxV5lB',
-					'https://iw4x-my.sharepoint.com/:u:/g/personal/emosewaj_iw4x_onmicrosoft_com/ET2Co4H-H4lGqKUBxlY66V4Bn4UOQjUSHjK3hZIeDLSXhQ?e=AwyZBZ&download=1'
+				[	// Client Files (V0.6.0) Hotfix Build
+					'https://drive.google.com/file/d/1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC/view?usp=sharing'
 				],
 				[	// DLC Files
 					'https://drive.google.com/uc?id=1d7mpdtyZdCiS4Trf_XHhU1Wxfpa22kYM',
 					'https://drive.google.com/uc?id=1Kb_bD-Tdguy75On2D2jN5Xvo1yo5zhIT',
-					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU',
-					'https://iw4x-my.sharepoint.com/:u:/g/personal/emosewaj_iw4x_onmicrosoft_com/EYnWYmCXExpEvn-bL2262Q0BSy0jVZF0FXslvpJEDPE5Fw?e=gPx8RF&download=1'
+					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU'
 				],
-				[	// All in one Files	(V0.6.0)
-					'https://drive.google.com/uc?id=1fDMeUiPmZn3kbUZpto936CKkL4jDY3Ja',
-					'https://drive.google.com/uc?id=1aup80Hx8shVpm_xuHhVOSn_oC12oHDCp',
-					'https://drive.google.com/uc?id=1nWZ5aZ7xxuskx8mfPrykgHEjbssBHiOo',
-					'https://drive.google.com/uc?id=1kg9N_w5k2EsYWW-hmJibiDWHK9CestF4',
-					'https://drive.google.com/uc?id=1Q8UHQymUsbQ7v_snPLN11x0CsiJSo6fg',
-					'https://drive.google.com/uc?id=1DAlqg-l1FRtruZIka36x6eOxR3YtngkG',
-					'https://drive.google.com/uc?id=1z7k2kbb2q9nRUUt8DClpznIAYLpI_wz5',
-					'https://drive.google.com/uc?id=1z7k2kbb2q9nRUUt8DClpznIAYLpI_wz5',
-					'https://drive.google.com/uc?id=1z7k2kbb2q9nRUUt8DClpznIAYLpI_wz5'
+				[	// All in one Files	(V0.6.0) Hotfix Build
+					'https://drive.google.com/file/d/1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB/view?usp=sharing'
 				]
 			]
 	
