@@ -47,7 +47,7 @@ function driveLink(type, langauge){
 
 			[	// GB
 				[	// Client Files (V0.6.0) Hotfix Build
-					'https://drive.google.com/file/d/1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC/view?usp=sharing'
+					'https://drive.google.com/uc?id=1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC'
 				],
 				[	// DLC Files
 					'https://drive.google.com/uc?id=1d7mpdtyZdCiS4Trf_XHhU1Wxfpa22kYM',
@@ -55,12 +55,12 @@ function driveLink(type, langauge){
 					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU'
 				],
 				[	// All in one Files (V0.6.0) Hotfix Build	
-					'https://drive.google.com/file/d/1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB/view?usp=sharing'
+					'https://drive.google.com/uc?id=1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB'
 				]
 			],
 			[	// DE
 				[	// Client Files (V0.6.0) Hotfix Build
-					'https://drive.google.com/file/d/1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC/view?usp=sharing'
+					'https://drive.google.com/uc?id=1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC'
 				],
 				[	// DLC Files
 					'https://drive.google.com/uc?id=1d7mpdtyZdCiS4Trf_XHhU1Wxfpa22kYM',
@@ -68,12 +68,12 @@ function driveLink(type, langauge){
 					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU'
 				],
 				[	// All in one Files (V0.6.0) Hotfix Build
-					'https://drive.google.com/file/d/1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB/view?usp=sharing'
+					'https://drive.google.com/uc?id=1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB'
 				]
 			],
 			[	// ES
 				[	// Client Files (V0.6.0) Hotfix Build
-					'https://drive.google.com/file/d/1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC/view?usp=sharing'
+					'https://drive.google.com/uc?id=1SuF9cVa8VeYnHQDMzf0CxqDnQODymVVC'
 				],
 				[	// DLC Files
 					'https://drive.google.com/uc?id=1d7mpdtyZdCiS4Trf_XHhU1Wxfpa22kYM',
@@ -81,7 +81,7 @@ function driveLink(type, langauge){
 					'https://drive.google.com/uc?id=1MHQRFNO81ggf7xS2jxR1L8oM6-vMaUiU'
 				],
 				[	// All in one Files	(V0.6.0) Hotfix Build
-					'https://drive.google.com/file/d/1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB/view?usp=sharing'
+					'https://drive.google.com/uc?id=1Ge12908Rcb1QhceZ1MtCVRuMZ9wfgIdB'
 				]
 			]
 	
